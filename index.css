@@ -1,0 +1,600 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+nav
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+nav aside
+{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav section
+{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgb(25,179,189) ;    
+    color: white;
+}
+nav section p
+{
+    font-size: 0.7rem;
+    border-right: 1px solid white;
+    padding: 1rem;
+    margin: 0 !important; 
+}
+nav section p select
+{
+    background-color: rgb(25,179,189) ;    
+    font-size: 0.7rem;
+    border: none;
+    outline: none;
+    color: white;
+}
+nav section :last-child
+{
+    border: none;
+}
+nav article
+{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav article div p
+{
+    color: red;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0 !important; 
+}
+#home
+{
+    width: 100%;
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../media/home\ backgroung.webp);
+    
+}
+#home video
+{
+    width: 100%;
+    height: 81vh;
+}
+#list
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0;
+}
+#list section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#list section h4
+{
+  color: rgb(25,179,189);
+  font-size: 1.1rem;
+}
+#overview
+{
+    width: 100%;
+    height: 100vh;
+    margin-top: 2rem;
+}
+#overview>p
+{
+    padding-left: 5rem;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color:  rgb(20,70,157);
+}
+#location
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#location aside
+{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.6rem;
+    border-left: 1px solid blue;
+}
+#location aside :nth-child(1)
+{
+    font-size: 2rem;
+    color: rgb(25,179,189) ;
+}
+#location aside :nth-child(2)
+{
+    line-height: 2rem;
+    color:  rgb(20,70,157);
+    text-align: justify;
+}
+#location article
+{
+    width: 45%;
+}
+
+#Credentials
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+#Credentials aside
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.6rem;
+}
+#Credentials aside :nth-child(1)
+{
+    font-size: 1rem;
+    color: rgb(25,179,189) ;
+}
+#Credentials aside :nth-child(2)
+{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color:  rgb(20,70,157);
+    text-align: justify;
+}
+#Credentials aside div
+{
+    width: 70%;
+    margin-left: 1.5rem;
+    border-left: 1px solid rgb(20,70,157);
+    padding: 2rem;
+}
+#Credentials article
+{
+    width: 50%;
+}
+#Credentials article img
+{
+    width: 100%;
+}
+
+
+#numbers
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#numbers article
+{
+    width: 50%;
+}
+#numbers article img
+{
+    width: 100%;
+}
+#numbers aside
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.6rem;
+}
+#numbers aside>p
+{
+    color: rgb(25,179,189) ;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-left: 3.5rem;
+}
+#numbers aside div
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+}
+#numbers aside div article
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#numbers aside div span
+{
+    width: 40%;
+    padding: 1rem;
+    position: relative;
+}
+#numbers aside div span h1
+{
+    color:  rgb(20,70,157);
+    font-weight: 350;
+}
+#numbers aside div span p
+{
+    color:  rgb(57, 101, 176);
+    letter-spacing: 2px;
+}
+.animie
+{
+    background-color:  rgb(25,179,189);
+    width: 1.5rem;
+    padding: 0.1rem;
+    position: absolute;
+    top: 52%;
+    right: 5%;
+}
+
+#health
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#health article
+{
+    width: 50%;
+    height: 100vh;
+    background-image: url(../media/health.webp);
+    background-attachment: fixed;
+    background-size: 110vh;
+    background-repeat: no-repeat;
+}
+#health aside
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5rem;
+}
+#health aside div p:nth-child(1)
+{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: rgb(25,179,189) ;
+
+}
+#health aside div p:nth-child(2)
+{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    width: 70%;
+    line-height: 1.5rem;
+    color:  rgb(57, 101, 176);
+    text-align: justify;
+}
+#health aside div p
+{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+#health aside div p button:nth-child(1)
+{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: rgb(25,179,189) ;
+}
+#health aside div p button:nth-child(2)
+{
+    padding: 0.312rem 0.8rem;
+    border: none;
+    border-radius:0 0.5rem 0.5rem 0;
+    background-color:  rgb(57, 101, 176);
+}
+#health aside div p button ion-icon
+{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+#diagnostic
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#diagnostic article
+{
+    width: 50%;
+    height: 100vh;
+    background-image: url(../media/diagnotics.webp);
+    background-attachment: fixed;
+    background-size: 110vh;
+    /* background-size: 0vh; */
+    background-repeat: no-repeat;
+}
+#diagnostic aside
+{
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5rem;
+}
+#diagnostic aside div p:nth-child(1)
+{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: rgb(25,179,189) ;
+
+}
+#diagnostic aside div p:nth-child(2)
+{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    width: 70%;
+    line-height: 1.5rem;
+    color:  rgb(57, 101, 176);
+    text-align: justify;
+}
+#diagnostic aside div p
+{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+#diagnostic aside div p button:nth-child(1)
+{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: rgb(25,179,189) ;
+}
+#diagnostic aside div p button:nth-child(2)
+{
+    padding: 0.312rem 0.8rem;
+    border: none;
+    border-radius:0 0.5rem 0.5rem 0;
+    background-color:  rgb(57, 101, 176);
+}
+#diagnostic aside div p button ion-icon
+{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+#outpatient
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#outpatient article
+{
+    width: 50%;
+    height: 100vh;
+    background-image: url(../media/outpatient.webp);
+    background-attachment: fixed;
+    background-size: 110vh;
+    background-repeat: no-repeat;
+}
+#outpatient aside
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5rem;
+}
+#outpatient aside div p:nth-child(1)
+{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: rgb(25,179,189) ;
+
+}
+#outpatient aside div p:nth-child(2)
+{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    width: 70%;
+    line-height: 1.5rem;
+    color:  rgb(57, 101, 176);
+    text-align: justify;
+}
+#outpatient aside div p
+{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+#outpatient aside div p button:nth-child(1)
+{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: rgb(25,179,189) ;
+}
+#outpatient aside div p button:nth-child(2)
+{
+    padding: 0.312rem 0.8rem;
+    border: none;
+    border-radius:0 0.5rem 0.5rem 0;
+    background-color:  rgb(57, 101, 176);
+}
+#outpatient aside div p button ion-icon
+{
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+#inpatient
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inpatient article
+{
+    width: 50%;
+    height: 100vh;
+    background-image: url(../media/inpatient.webp);
+    background-attachment: fixed;
+    background-size: 110vh;
+    background-repeat: no-repeat;
+}
+#inpatient aside
+{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 4rem;
+}
+#inpatient aside div p:nth-child(1)
+{
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: rgb(25,179,189) ;
+
+}
+#inpatient aside div p:nth-child(2)
+{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    width: 70%;
+    line-height: 1.5rem;
+    color:  rgb(57, 101, 176);
+    text-align: justify;
+}
+#inpatient aside div p
+{
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+#inpatient aside div p button:nth-child(1)
+{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color: rgb(25,179,189) ;
+}
+#inpatient aside div p button:nth-child(2)
+{
+    padding: 0.312rem 0.8rem;
+    border: none;
+    border-radius:0 0.5rem 0.5rem 0;
+    background-color:  rgb(57, 101, 176);
+}
+#inpatient aside div p button ion-icon
+{
+    font-size: 1.5rem;
+    color: white;
+}
+#blank
+{
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(20,70,157);
+}
+
+
+#coorider
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../media/coorider.webp);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#coorider aside
+{
+    width: 40%;
+}
+#coorider article
+{
+    width: 30%;
+    background-color: rgb(20,70,157);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    opacity: 0.5;
+}
+#coorider article p:nth-child(1)
+{
+    color:rgb(25,179,189) ;
+    letter-spacing: 2px;
+}
+#coorider article p:nth-child(2)
+{
+    color:white;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+#coorider article p:nth-child(3)
+{
+    color:white;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
